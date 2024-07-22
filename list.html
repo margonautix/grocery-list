@@ -8,22 +8,24 @@
 </head>
 <body>
    <header>
-    <!-- Inline CSS Styling -->
+    <!-- Internal CSS Styling -->
     <style>
         h1 {
-    text-align:center;
-    color: darkolivegreen;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+            text-align:center;
+            color: darkolivegreen;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
         }
     </style>
     <h1>Grocery List</h1>
    </header> 
 
-   <section class="container">
+   <section class="heading">
     <h2>Food and Beverages</h2>
    </section>
 
 <br>
+<!-- put lists together into a container for flex formatting in css -->
+   <div class="container"> 
 <!-- food and bev lists -->
     <section class="box">
     <h4>Food</h4>
@@ -35,7 +37,8 @@
    </section>
 
    <section class="box">
-    <h4>Beverages</h4>
+    <!-- Inline CSS -->
+    <h4 style="color:rgb(19, 104, 19);">Beverages</h4>
     <ul style="list-style-type: upper-roman;">
         <li>Bottled Water</li>
         <li>Diet Dr. Pepper</li>
@@ -43,21 +46,23 @@
     </ul>
    </section>
 
+   <img src="assets/pizza.png" width="200px">
+</div>
 <br>
-   <section class="container">
+<br>
+   <section class="heading">
     <h2>Home Stuff</h2>
    </section>
 <br>
-
-<section class="box">
-    <h4>Pets</h4>
-    <ol style="list-style-type:circle;">
-        <li>Cat Food</li>
-        <li>Kitty Litter</li>
-        <li>Catnip Toys</li>
-    </ul>
+<div class="container">
+    <section class="box">
+        <h4 style="color:rgb(19, 104, 19);">Pets</h4>
+        <ul style="list-style-type:circle;">
+            <li>Cat Food</li>
+            <li>Kitty Litter</li>
+            <li>Catnip Toys</li>
+        </ul>
    </section>
-
    
    <section class="box">
     <h4>Self Care</h4>
@@ -68,11 +73,9 @@
     </ul>
    </section>
 
- <!-- <table> 
-    <tr>
-        <th>FOOD</th>
-    </tr>
- </table>
-  -->
+    <img src="assets/catstuff.jpg" width="200" height="250">
+</div>
+   
+
 </body>
 </html>
